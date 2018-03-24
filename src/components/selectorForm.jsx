@@ -14,12 +14,14 @@ class SelectorForm extends Component {
 
   render() {
     return (
-      <div>
-        <form>
-          <NumberSelector label="standard" />
-          <NumberSelector label="skill" />
-          <NumberSelector label="gear" />
-        </form>
+      <div className="row">
+        <div className="col s8">
+          <form>
+            <NumberSelector label="standard" />
+            <NumberSelector label="skill" />
+            <NumberSelector label="gear" />
+          </form>
+        </div>
       </div>
     );
   }

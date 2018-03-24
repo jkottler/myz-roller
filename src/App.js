@@ -1,24 +1,26 @@
+import 'materialize-css/dist/css/materialize.min.css';
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import Random from 'random-js';
+
 import './App.css';
 
 import Die from './components/die';
 import SelectorForm from './components/selectorForm';
 
+// create a Mersenne Twister-19937 that is auto-seeded based on time and other random values
+var engine = Random.engines.mt19937().autoSeed();
+var distribution = Random.integer(1, 6);
+
+function roll() {
+  return distribution(engine);
+}
+
 function dice() {
-  // return [
-  //   <Die value="1" type="gear" />,
-  //   <Die value="1" type="base" />,
-  //   <Die value="1" type="skill" />,
-  //   <Die value="2" type="gear" />,
-  //   <Die value="6" type="gear" />,
-  // ];
-  let values = Array.from(new Array(6), (x, i) => i + 1);
+  let values = Array.from(new Array(3), () => 0);
   let types = ['base', 'gear', 'skill'];
 
-  return values.map(v => types.map(t => <Die value={v} type={t} />));
-
-  // return values.map(v => <Die value={v} type="gear" />);
+  return values.map(v => types.map(t => <Die value={roll()} type={t} />));
 }
 
 class App extends Component {
@@ -29,8 +31,10 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to MYZ Roller</h1>
         </header>
-        <SelectorForm />
-        <div className="App-intro">{dice()}</div>
+        <div className="container">
+          <SelectorForm />
+          <div className="App-intro">{dice()}</div>
+        </div>
       </div>
     );
   }

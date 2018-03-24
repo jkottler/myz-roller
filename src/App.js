@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Die from './components/die';
+import SelectorForm from './components/selectorForm';
 
 function dice() {
   // return [
@@ -28,6 +29,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to MYZ Roller</h1>
         </header>
+        <SelectorForm />
         <div className="App-intro">{dice()}</div>
       </div>
     );

@@ -12,23 +12,17 @@ class NumberSelector extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col s8">
-          <div className="input-field">
-            <div className="col s4 flow-text">{this.props.name}</div>
-            <div class="input-field col s4">
-              <input
-                placeholder={this.props.name}
-                id={this.props.name}
-                type="number"
-                min="0"
-                max="20"
-                value={this.props.value}
-                onChange={this.handleChange}
-              />
-            </div>
-          </div>
-        </div>
+      <div class="input-field">
+        <div>{this.props.name}</div>
+        <input
+          placeholder={this.props.name}
+          id={this.props.name}
+          type="number"
+          min="0"
+          max="20"
+          value={this.props.value}
+          onChange={this.handleChange}
+        />
       </div>
     );
   }

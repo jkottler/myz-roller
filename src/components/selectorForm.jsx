@@ -10,6 +10,12 @@ class SelectorForm extends Component {
       skillCount: this.props.skillCount || 0,
       gearCount: this.props.gearCount || 0,
     };
+
+    this.handleCountChange = (type, count) => {
+      this.setState({
+        [type + 'Count']: count,
+      });
+    };
   }
 
   render() {
@@ -17,9 +23,21 @@ class SelectorForm extends Component {
       <div className="row">
         <div className="col s8">
           <form>
-            <NumberSelector label="standard" />
-            <NumberSelector label="skill" />
-            <NumberSelector label="gear" />
+            <NumberSelector
+              name="standard"
+              value={this.state.standardCount}
+              onChange={this.handleCountChange}
+            />
+            <NumberSelector
+              name="skill"
+              value={this.state.skillCount}
+              onChange={this.handleCountChange}
+            />
+            <NumberSelector
+              name="gear"
+              value={this.state.gearCount}
+              onChange={this.handleCountChange}
+            />
           </form>
         </div>
       </div>

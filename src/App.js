@@ -32,8 +32,12 @@ class App extends Component {
           <h1 className="App-title">Welcome to MYZ Roller</h1>
         </header>
         <div className="container">
-          <SelectorForm />
-          <div className="App-intro">{dice()}</div>
+          <div className="row">
+            <div className="col s3">
+              <SelectorForm />
+            </div>
+            <div className="col s9">{dice()}</div>
+          </div>
         </div>
       </div>
     );

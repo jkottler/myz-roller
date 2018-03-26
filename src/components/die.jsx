@@ -26,6 +26,7 @@ const style = {
   margin: '3px',
   'border-radius': '5px',
   position: 'relative',
+  display: 'inline-block',
 };
 
 const dieTypes = {

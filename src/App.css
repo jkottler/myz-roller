@@ -5,12 +5,11 @@
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
-  filter: hue-rotate(-45deg); /* make the logo green */
 }
 
 .App-header {
   background-color: #222;
-  height: 150px;
+  height: 200px;
   padding: 20px;
   color: white;
 }

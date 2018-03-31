@@ -1,6 +1,6 @@
 import 'materialize-css/dist/css/materialize.min.css';
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './d6-6-glow.svg';
 import Random from 'random-js';
 
 import './App.css';

@@ -26,35 +26,6 @@ class NumberSelector extends Component {
       </div>
     );
   }
-
-  //   render() {
-  //     return (
-  //       <div>
-  //         <div className="row">
-  //           <div class="input-field col s6">
-  //             <input
-  //               placeholder="Standard"
-  //               id="standard"
-  //               type="text"
-  //               class="validate"
-  //             />
-  //             <label for="standard">Standard Dice</label>
-  //           </div>
-  //           <div className="col s8">
-  //             <a className="waves-effect waves-light btn col s1 ">-</a>
-  //             <div className="input-field col s6 col s4 offset-s1">
-  //               <input
-  //                 type="text"
-  //                 value={this.state.value}
-  //                 onChange={this.handleChange}
-  //               />
-  //             </div>
-  //             <a className="waves-effect waves-light btn col s1 offset-s7">+</a>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     );
-  //   }
 }
 
 export default NumberSelector;

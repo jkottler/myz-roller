@@ -6,7 +6,7 @@ class SelectorForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      baseCount: this.props.standardCount || 0,
+      baseCount: this.props.baseCount || 2,
       skillCount: this.props.skillCount || 0,
       gearCount: this.props.gearCount || 0,
     };

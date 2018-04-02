@@ -20,17 +20,39 @@ function dice() {
   let values = Array.from(new Array(3), () => 0);
   let types = ['base', 'gear', 'skill'];
 
-  return values.map(v => types.map(t => <Die value={roll()} type={t} />));
+  // return values.map(v => types.map(t => <Die value={roll()} type={t} />));
+  return [
+    <Die value={1} type="base" />,
+    <Die value={1} type="gear" />,
+    <Die value={1} type="skill" />,
+    <Die value={2} type="base" />,
+    <Die value={3} type="gear" />,
+    <Die value={4} type="skill" />,
+    <Die value={6} type="base" />,
+    <Die value={6} type="gear" />,
+    <Die value={6} type="skill" />,
+  ];
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.handleRoll = e => {
+      dice(e.standardCount, e.skillCount, e.gearCount);
+    };
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to MYZ Roller</h1>
+          <div>
+            <h1 className="App-title">Welcome to MYZ Roller</h1>
+          </div>
         </header>
+
         <div className="container">
           <div className="row">
             <div className="col s3">
@@ -39,6 +61,16 @@ class App extends Component {
             <div className="col s9">{dice()}</div>
           </div>
         </div>
+
+        <footer className="page-footer">
+          <div className="container">
+            <div className="row">
+              <div className="col s12">
+                Icons from <a href="http://game-icons.net">game-icons.net</a>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     );
   }

@@ -6,7 +6,7 @@ class SelectorForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      standardCount: this.props.standardCount || 0,
+      baseCount: this.props.standardCount || 0,
       skillCount: this.props.skillCount || 0,
       gearCount: this.props.gearCount || 0,
     };
@@ -16,6 +16,10 @@ class SelectorForm extends Component {
         [type + 'Count']: count,
       });
     };
+
+    this.handleRoll = e => {
+      console.log(this.state);
+    };
   }
 
   render() {
@@ -24,8 +28,8 @@ class SelectorForm extends Component {
         <div className="col s8">
           <form>
             <NumberSelector
-              name="standard"
-              value={this.state.standardCount}
+              name="base"
+              value={this.state.baseCount}
               onChange={this.handleCountChange}
             />
             <NumberSelector
@@ -38,6 +42,9 @@ class SelectorForm extends Component {
               value={this.state.gearCount}
               onChange={this.handleCountChange}
             />
+            <a class="waves-effect waves-light btn" onClick={this.handleRoll}>
+              roll
+            </a>
           </form>
         </div>
       </div>

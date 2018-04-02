@@ -1,14 +1,23 @@
 import React from 'react';
 
+import radWhite from './radioactive-white.svg';
+import radBlack from './radioactive-black.svg';
+import crash from './corner-explosion.svg';
+import bio from './biohazard.svg';
+
 function Die(props) {
   return (
     <div
       style={{
         ...style,
         background: dieTypes[props.type].background,
-        color: dieTypes[props.type].foreground,
+
+        'font-family': "'Arial Black', Gadget, 'sans-serif'",
+        'font-size': 'xx-large',
       }}>
-      <div style={style2}>{show(props.type, props.value)}</div>
+      <div style={{ ...style2, color: dieTypes[props.type].foreground }}>
+        {show(props.type, props.value)}
+      </div>
     </div>
   );
 }
@@ -33,27 +42,45 @@ const dieTypes = {
   base: {
     background: 'yellow',
     foreground: 'black',
-    one: 'bio',
+    one: bio,
+    six: radBlack,
   },
   skill: {
     background: 'green',
-    forground: 'white',
-    one: '1',
+    foreground: 'white',
+    six: radWhite,
   },
   gear: {
     background: 'black',
     foreground: 'white',
-    one: 'break',
+    one: crash,
+    six: radWhite,
   },
 };
 
 const show = (type, value) => {
   let v = parseInt(value, 10);
   if (v === 6) {
-    return 'rad';
+    return (
+      <img
+        height="40"
+        width="40"
+        border-radius="5px"
+        src={dieTypes[type].six}
+        style={style2}
+      />
+    );
   }
-  if (v === 1) {
-    return dieTypes[type].one;
+  if (v === 1 && type !== 'skill') {
+    return (
+      <img
+        height="40"
+        width="40"
+        border-radius="5px"
+        src={dieTypes[type].one}
+        style={style2}
+      />
+    );
   }
   return v;
 };

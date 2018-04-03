@@ -24,32 +24,31 @@ class SelectorForm extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col s8">
-          <form>
-            <NumberSelector
-              name="base"
-              value={this.state.baseCount}
-              onChange={this.handleCountChange}
-            />
-            <NumberSelector
-              name="skill"
-              value={this.state.skillCount}
-              onChange={this.handleCountChange}
-            />
-            <NumberSelector
-              name="gear"
-              value={this.state.gearCount}
-              onChange={this.handleCountChange}
-            />
-            <a
-              className="waves-effect waves-light btn"
-              onClick={this.handleRoll}>
-              roll
-            </a>
-          </form>
-        </div>
-      </div>
+      <form>
+        <NumberSelector
+          name="base"
+          value={this.state.baseCount}
+          onChange={this.handleCountChange}
+        />
+        <NumberSelector
+          name="skill"
+          value={this.state.skillCount}
+          onChange={this.handleCountChange}
+        />
+        <NumberSelector
+          name="gear"
+          value={this.state.gearCount}
+          onChange={this.handleCountChange}
+        />
+        <span>
+          <a className="waves-effect waves-light btn" onClick={this.handleRoll}>
+            roll
+          </a>
+          <a className="waves-effect waves-light btn" onClick={this.handlePush}>
+            push
+          </a>
+        </span>
+      </form>
     );
   }
 }

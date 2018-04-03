@@ -53,20 +53,33 @@ class App extends Component {
           </div>
         </header>
 
-        <div className="container">
-          <div className="row">
-            <div className="col s3">
-              <SelectorForm />
+        <main>
+          <div className="container">
+            <div className="row">
+              <div className="col s3">
+                <SelectorForm
+                  baseCount={this.state.baseCount}
+                  skillCount={this.state.skillCount}
+                  gearCount={this.state.gearCount}
+                  handleRoll={this.handleRoll}
+                />
+              </div>
+              <div className="col s9">{this.state.dice}</div>
             </div>
-            <div className="col s9">{dice()}</div>
           </div>
-        </div>
+        </main>
 
         <footer className="page-footer">
           <div className="container">
             <div className="row">
               <div className="col s12">
-                Icons from <a href="http://game-icons.net">game-icons.net</a>
+                Icons from{' '}
+                <a
+                  href="http://game-icons.net"
+                  rel="noopener noreferrer"
+                  target="_blank">
+                  game-icons.net
+                </a>
               </div>
             </div>
           </div>

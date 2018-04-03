@@ -16,30 +16,50 @@ function roll() {
   return distribution(engine);
 }
 
-function dice() {
-  let values = Array.from(new Array(3), () => 0);
-  let types = ['base', 'gear', 'skill'];
+function dice(baseCount, skillCount, gearCount) {
+  let result = [];
 
-  // return values.map(v => types.map(t => <Die value={roll()} type={t} />));
-  return [
-    <Die value={1} type="base" />,
-    <Die value={1} type="gear" />,
-    <Die value={1} type="skill" />,
-    <Die value={2} type="base" />,
-    <Die value={3} type="gear" />,
-    <Die value={4} type="skill" />,
-    <Die value={6} type="base" />,
-    <Die value={6} type="gear" />,
-    <Die value={6} type="skill" />,
-  ];
+  let index = 0;
+
+  for (let i = 0; i < baseCount; i++) {
+    result.push(<Die value={roll()} type="base" key={index} />);
+    index++;
+  }
+
+  for (let i = 0; i < skillCount; i++) {
+    result.push(<Die value={roll()} type="skill" key={index} />);
+    index++;
+  }
+
+  for (let i = 0; i < gearCount; i++) {
+    result.push(<Die value={roll()} type="gear" key={index} />);
+    index++;
+  }
+  return result;
 }
 
 class App extends Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      baseCount: 2,
+      skillCount: 0,
+      gearCount: 0,
+      dice: dice(2, 0, 0),
+    };
+
     this.handleRoll = e => {
-      dice(e.standardCount, e.skillCount, e.gearCount);
+      let { baseCount, skillCount, gearCount } = e;
+      baseCount = parseInt(baseCount, 10);
+      skillCount = parseInt(skillCount, 10);
+      gearCount = parseInt(gearCount, 10);
+      this.setState({
+        baseCount,
+        skillCount,
+        gearCount,
+        dice: dice(baseCount, skillCount, gearCount),
+      });
     };
   }
 

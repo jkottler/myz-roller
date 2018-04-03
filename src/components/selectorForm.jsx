@@ -6,7 +6,7 @@ class SelectorForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      baseCount: this.props.baseCount || 2,
+      baseCount: this.props.baseCount || 0,
       skillCount: this.props.skillCount || 0,
       gearCount: this.props.gearCount || 0,
     };
@@ -18,7 +18,7 @@ class SelectorForm extends Component {
     };
 
     this.handleRoll = e => {
-      console.log(this.state);
+      this.props.handleRoll(this.state);
     };
   }
 
@@ -42,7 +42,9 @@ class SelectorForm extends Component {
               value={this.state.gearCount}
               onChange={this.handleCountChange}
             />
-            <a class="waves-effect waves-light btn" onClick={this.handleRoll}>
+            <a
+              className="waves-effect waves-light btn"
+              onClick={this.handleRoll}>
               roll
             </a>
           </form>

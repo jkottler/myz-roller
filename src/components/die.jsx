@@ -12,8 +12,8 @@ function Die(props) {
         ...style,
         background: dieTypes[props.type].background,
 
-        'font-family': "'Arial Black', Gadget, 'sans-serif'",
-        'font-size': 'xx-large',
+        fontFamily: "'Arial Black', Gadget, 'sans-serif'",
+        fontSize: 'xx-large',
       }}>
       <div style={{ ...style2, color: dieTypes[props.type].foreground }}>
         {show(props.type, props.value)}
@@ -33,7 +33,7 @@ const style = {
   width: '50px',
   height: '50px',
   margin: '3px',
-  'border-radius': '5px',
+  borderRadius: '5px',
   position: 'relative',
   display: 'inline-block',
 };
@@ -68,6 +68,7 @@ const show = (type, value) => {
         border-radius="5px"
         src={dieTypes[type].six}
         style={style2}
+        alt={dieTypes[type].six}
       />
     );
   }
@@ -79,6 +80,7 @@ const show = (type, value) => {
         border-radius="5px"
         src={dieTypes[type].one}
         style={style2}
+        alt={dieTypes[type].one}
       />
     );
   }

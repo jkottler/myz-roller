@@ -12,7 +12,7 @@ class NumberSelector extends Component {
 
   render() {
     return (
-      <div class="input-field">
+      <div className="input-field">
         <div>{this.props.name}</div>
         <input
           placeholder={this.props.name}

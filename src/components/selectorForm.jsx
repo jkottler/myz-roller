@@ -20,6 +20,10 @@ class SelectorForm extends Component {
     this.handleRoll = e => {
       this.props.handleRoll(this.state);
     };
+
+    this.handlePush = e => {
+      this.props.handlePush();
+    };
   }
 
   render() {
@@ -44,7 +48,11 @@ class SelectorForm extends Component {
           <a className="waves-effect waves-light btn" onClick={this.handleRoll}>
             roll
           </a>
-          <a className="waves-effect waves-light btn" onClick={this.handlePush}>
+          <a
+            className={
+              'waves-effect waves-light btn ' + this.props.pushDisabled
+            }
+            onClick={this.handlePush}>
             push
           </a>
         </span>

@@ -16,7 +16,7 @@ function roll() {
   return distribution(engine);
 }
 
-function dice(baseCount, skillCount, gearCount) {
+function rollDice(baseCount, skillCount, gearCount) {
   let result = [];
 
   let index = 0;
@@ -43,10 +43,11 @@ class App extends Component {
     super(props);
 
     this.state = {
-      baseCount: 2,
+      baseCount: 0,
       skillCount: 0,
       gearCount: 0,
-      dice: dice(2, 0, 0),
+      dice: rollDice(0, 0, 0),
+      pushDisabled: 'disabled',
     };
 
     this.handleRoll = e => {
@@ -58,8 +59,28 @@ class App extends Component {
         baseCount,
         skillCount,
         gearCount,
-        dice: dice(baseCount, skillCount, gearCount),
+        dice: rollDice(baseCount, skillCount, gearCount),
+        pushDisabled: '',
       });
+    };
+
+    this.handlePush = e => {
+      let newDice = [];
+      for (let die of this.state.dice) {
+        if (
+          die.props.value === 6 ||
+          (die.props.value === 1 && die.props.type !== 'skill')
+        ) {
+          // keep symbol dice
+          newDice.push(die);
+        } else {
+          // reroll others
+          newDice.push(
+            <Die value={roll()} type={die.props.type} key={die.key} />
+          );
+        }
+      }
+      this.setState({ dice: newDice, pushDisabled: 'disabled' });
     };
   }
 
@@ -76,15 +97,17 @@ class App extends Component {
         <main>
           <div className="container">
             <div className="row">
-              <div className="col s4">
+              <div className="col s3">
                 <SelectorForm
                   baseCount={this.state.baseCount}
                   skillCount={this.state.skillCount}
                   gearCount={this.state.gearCount}
                   handleRoll={this.handleRoll}
+                  handlePush={this.handlePush}
+                  pushDisabled={this.state.pushDisabled}
                 />
               </div>
-              <div className="col s8">{this.state.dice}</div>
+              <div className="col s9">{this.state.dice}</div>
             </div>
           </div>
         </main>

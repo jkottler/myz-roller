@@ -12,7 +12,7 @@ function Die(props) {
         ...style,
         background: dieTypes[props.type].background,
 
-        fontFamily: "'Arial Black', Gadget, 'sans-serif'",
+        fontFamily: "'Arial Black', 'Arial BoldMT', Gadget, 'sans-serif'",
         fontSize: 'xx-large',
       }}>
       <div style={{ ...style2, color: dieTypes[props.type].foreground }}>

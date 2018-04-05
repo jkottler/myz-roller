@@ -121,8 +121,7 @@ class App extends Component {
             <div className="row">
               <div className="col s12">
                 <div className="col s4">
-                  {' '}
-                  A dice roller for{' '}
+                  A dice roller for:{' '}
                   <a
                     href="https://www.modiphius.com/mutant.html"
                     rel="noopener noreferrer"
@@ -131,7 +130,7 @@ class App extends Component {
                   </a>
                 </div>
                 <div className="col s4">
-                  Icons from{' '}
+                  Icons from:{' '}
                   <a
                     href="http://game-icons.net"
                     rel="noopener noreferrer"
@@ -140,7 +139,7 @@ class App extends Component {
                   </a>
                 </div>
                 <div className="col s4">
-                  Contribute on{' '}
+                  Contribute on:{' '}
                   <a
                     href="https://github.com/jkottler/myz-roller"
                     rel="noopener noreferrer"

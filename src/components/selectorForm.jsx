@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 
 import NumberSelector from './numberSelector';
 
+const style = {
+  'margin-left': '4px',
+  'margin-right': '4px',
+};
 class SelectorForm extends Component {
   constructor(props) {
     super(props);
@@ -45,10 +49,14 @@ class SelectorForm extends Component {
           onChange={this.handleCountChange}
         />
         <span>
-          <a className="waves-effect waves-light btn" onClick={this.handleRoll}>
+          <a
+            style={style}
+            className="waves-effect waves-light btn"
+            onClick={this.handleRoll}>
             roll
           </a>
           <a
+            style={style}
             className={
               'waves-effect waves-light btn ' + this.props.pushDisabled
             }

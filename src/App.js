@@ -116,13 +116,34 @@ class App extends Component {
           <div className="container">
             <div className="row">
               <div className="col s12">
-                Icons from{' '}
-                <a
-                  href="http://game-icons.net"
-                  rel="noopener noreferrer"
-                  target="_blank">
-                  game-icons.net
-                </a>
+                <div className="col s4">
+                  {' '}
+                  A dice roller for{' '}
+                  <a
+                    href="https://www.modiphius.com/mutant.html"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    Mutant: Year Zero
+                  </a>
+                </div>
+                <div className="col s4">
+                  Icons from{' '}
+                  <a
+                    href="http://game-icons.net"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    game-icons.net
+                  </a>
+                </div>
+                <div className="col s4">
+                  Contribute on{' '}
+                  <a
+                    href="https://github.com/jkottler/myz-roller"
+                    rel="noopener noreferrer"
+                    target="_blank">
+                    Github
+                  </a>
+                </div>
               </div>
             </div>
           </div>

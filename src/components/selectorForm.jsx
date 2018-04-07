@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import NumberSelector from './numberSelector';
 
 const style = {
-  'margin-left': '4px',
-  'margin-right': '4px',
+  marginLeft: '4px',
+  marginRight: '4px',
 };
 class SelectorForm extends Component {
   constructor(props) {

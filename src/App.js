@@ -101,7 +101,7 @@ class App extends Component {
         <main>
           <div className="container">
             <div className="row">
-              <div className="col s3">
+              <div className="col s4">
                 <SelectorForm
                   baseCount={this.state.baseCount}
                   skillCount={this.state.skillCount}
@@ -111,7 +111,7 @@ class App extends Component {
                   pushDisabled={this.state.pushDisabled}
                 />
               </div>
-              <div className="col s9">{this.state.dice}</div>
+              <div className="col s8">{this.state.dice}</div>
             </div>
           </div>
         </main>

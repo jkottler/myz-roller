@@ -42,7 +42,9 @@ class NumberSelector extends Component {
             type={this.props.name}
             onClick={this.handleDecrement}
           />
-          <Die value="6" type={this.props.name} />
+          <span className="hide-on-small-only">
+            <Die value="6" type={this.props.name} />
+          </span>
           <IncrementButton
             label="+"
             type={this.props.name}

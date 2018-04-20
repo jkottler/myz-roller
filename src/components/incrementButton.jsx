@@ -29,7 +29,7 @@ const style = {
   borderRadius: '5px',
   position: 'relative',
   display: 'inline-block',
-  fontFamily: "'Arial Black', Arial-BoldMT, Gadget, 'sans-serif'",
+  fontFamily: "'Arial Black', Arial-BoldMT, roboto, 'sans-serif'",
   fontSize: '3rem',
 };
 

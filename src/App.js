@@ -8,6 +8,7 @@ import './App.css';
 
 import Die from './components/die';
 import SelectorForm from './components/selectorForm';
+import DiceDisplay from './components/diceDisplay';
 
 // init materialize
 M.AutoInit();
@@ -91,7 +92,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
+        <header className="App-header ">
           <img src={logo} className="App-logo" alt="logo" />
           <div>
             <h1 className="App-title">Welcome to MYZ Roller</h1>
@@ -111,7 +112,9 @@ class App extends Component {
                   pushDisabled={this.state.pushDisabled}
                 />
               </div>
-              <div className="col s8">{this.state.dice}</div>
+              <div className="col s8">
+                <DiceDisplay dice={this.state.dice} />
+              </div>
             </div>
           </div>
         </main>

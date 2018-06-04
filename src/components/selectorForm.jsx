@@ -17,17 +17,25 @@ class SelectorForm extends Component {
 
     this.handleCountChange = (type, count) => {
       this.setState({
-        [type + 'Count']: count,
+        [type + 'Count']: parseInt(count, 10),
       });
     };
 
-    this.handleRoll = e => {
+    this.handleRoll = (e) => {
       this.props.handleRoll(this.state);
     };
 
-    this.handlePush = e => {
+    this.handlePush = (e) => {
       this.props.handlePush();
     };
+  }
+
+  rollEnabled() {
+    return this.state.baseCount === 0 &&
+      this.state.skillCount === 0 &&
+      this.state.gearCount === 0
+      ? 'disabled'
+      : '';
   }
 
   render() {
@@ -51,7 +59,7 @@ class SelectorForm extends Component {
         <span>
           <a
             style={style}
-            className="waves-effect waves-light btn"
+            className={'waves-effect waves-light btn ' + this.rollEnabled()}
             onClick={this.handleRoll}>
             roll
           </a>

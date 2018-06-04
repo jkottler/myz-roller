@@ -53,9 +53,10 @@ class App extends Component {
       gearCount: 0,
       dice: rollDice(0, 0, 0),
       pushDisabled: 'disabled',
+      rollDisabled: 'disabled',
     };
 
-    this.handleRoll = e => {
+    this.handleRoll = (e) => {
       let { baseCount, skillCount, gearCount } = e;
       baseCount = parseInt(baseCount, 10);
       skillCount = parseInt(skillCount, 10);
@@ -69,7 +70,7 @@ class App extends Component {
       });
     };
 
-    this.handlePush = e => {
+    this.handlePush = (e) => {
       let newDice = [];
       for (let die of this.state.dice) {
         if (
@@ -110,6 +111,7 @@ class App extends Component {
                   handleRoll={this.handleRoll}
                   handlePush={this.handlePush}
                   pushDisabled={this.state.pushDisabled}
+                  rollDisabled={this.state.rollDisabled}
                 />
               </div>
               <div className="col s8">

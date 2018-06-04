@@ -2,7 +2,7 @@ import React from 'react';
 
 function IncrementButton(props) {
   return (
-    <div
+    <div className="increment-button"
       onClick={props.onClick}
       style={{
         ...style,

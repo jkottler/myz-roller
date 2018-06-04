@@ -57,4 +57,9 @@ a {
   .App-logo {
     height: 0px !important;
   }
+
+  .increment-button {
+    height: 40px !important;
+    width: 40px !important;
+  }
 }

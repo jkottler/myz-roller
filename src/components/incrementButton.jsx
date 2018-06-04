@@ -8,19 +8,19 @@ function IncrementButton(props) {
         ...style,
         background: types[props.type].background,
       }}>
-      <div style={{ ...style2, color: types[props.type].foreground }}>
+      <div
+        style={{
+          transform: 'translate(-50%, -50%)',
+          position: 'absolute',
+          left: '50%',
+          color: types[props.type].foreground,
+          top: props.label === '-' ? '40%' : '50%',
+        }}>
         {props.label}
       </div>
     </div>
   );
 }
-
-const style2 = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-};
 
 const style = {
   width: '50px',

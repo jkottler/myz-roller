@@ -47,3 +47,14 @@ main {
 a {
   color: #0d47a1;
 }
+
+@media only screen and (max-width: 600px) {
+  .App-header {
+    height: 60px !important;
+    padding: 0px !important;
+  }
+
+  .App-logo {
+    height: 0px !important;
+  }
+}

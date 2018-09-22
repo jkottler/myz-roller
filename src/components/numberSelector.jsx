@@ -4,7 +4,8 @@ import IncrementButton from './incrementButton';
 
 const style = {
   fontSize: 'xx-large',
-};
+  verticalAlign: 'top'
+}
 
 class NumberSelector extends Component {
   constructor(props) {
@@ -42,9 +43,7 @@ class NumberSelector extends Component {
             type={this.props.name}
             onClick={this.handleDecrement}
           />
-          <span className="hide-on-small-only">
-            <Die value="6" type={this.props.name} />
-          </span>
+          <span style={style}>{this.props.value}</span>
           <IncrementButton
             label="+"
             type={this.props.name}
@@ -59,7 +58,7 @@ class NumberSelector extends Component {
             value={this.props.value}
             onChange={this.handleChange}
           />
-          <div style={style}>{this.props.value}</div>
+          
         </div>
       </div>
     );

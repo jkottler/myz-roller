@@ -3,9 +3,12 @@ import React, { Component } from 'react';
 import NumberSelector from './numberSelector';
 
 const style = {
-  marginLeft: '4px',
-  marginRight: '4px',
-};
+  marginLeft: '2px',
+  marginRight: '2px',
+  display: 'inline',
+  paddingTop: '5px',
+  paddingBottom: '5px'
+}
 class SelectorForm extends Component {
   constructor(props) {
     super(props);
@@ -57,20 +60,20 @@ class SelectorForm extends Component {
           onChange={this.handleCountChange}
         />
         <span>
-          <a
+          <span
             style={style}
             className={'waves-effect waves-light btn ' + this.rollEnabled()}
             onClick={this.handleRoll}>
             roll
-          </a>
-          <a
+          </span>
+          <span
             style={style}
             className={
               'waves-effect waves-light btn ' + this.props.pushDisabled
             }
             onClick={this.handlePush}>
             push
-          </a>
+          </span>
         </span>
       </form>
     );

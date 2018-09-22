@@ -98,7 +98,7 @@ class App extends Component {
     };
     ReactGA.event({
       category: 'Dice',
-      action: 'roll'
+      action: 'push'
     })
   }
 

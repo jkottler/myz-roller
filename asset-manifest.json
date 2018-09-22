@@ -1,11 +1,11 @@
 {
   "main.css": "static/css/main.a371bf92.css",
   "main.css.map": "static/css/main.a371bf92.css.map",
-  "main.js": "static/js/main.d2ed1e8b.js",
-  "main.js.map": "static/js/main.d2ed1e8b.js.map",
-  "static/media/biohazard.svg": "static/media/biohazard.8f148111.svg",
-  "static/media/corner-explosion.svg": "static/media/corner-explosion.bd3f6fbf.svg",
-  "static/media/d6-6-glow.svg": "static/media/d6-6-glow.7dd09130.svg",
-  "static/media/radioactive-black.svg": "static/media/radioactive-black.9b0f30b3.svg",
-  "static/media/radioactive-white.svg": "static/media/radioactive-white.e2e3c844.svg"
+  "main.js": "static/js/main.10a11c7b.js",
+  "main.js.map": "static/js/main.10a11c7b.js.map",
+  "static\\media\\biohazard.svg": "static/media/biohazard.8f148111.svg",
+  "static\\media\\corner-explosion.svg": "static/media/corner-explosion.bd3f6fbf.svg",
+  "static\\media\\d6-6-glow.svg": "static/media/d6-6-glow.7dd09130.svg",
+  "static\\media\\radioactive-black.svg": "static/media/radioactive-black.9b0f30b3.svg",
+  "static\\media\\radioactive-white.svg": "static/media/radioactive-white.e2e3c844.svg"
 }

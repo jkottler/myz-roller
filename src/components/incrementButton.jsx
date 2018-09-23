@@ -1,12 +1,12 @@
-import React from 'react';
+import React from 'react'
 
-function IncrementButton(props) {
+function IncrementButton (props) {
   return (
-    <div className="increment-button"
+    <div className='increment-button'
       onClick={props.onClick}
       style={{
         ...style,
-        background: types[props.type].background,
+        background: types[props.type].background
       }}>
       <div
         style={{
@@ -14,15 +14,25 @@ function IncrementButton(props) {
           position: 'absolute',
           left: '50%',
           color: types[props.type].foreground,
-          top: props.label === '-' ? '40%' : '50%',
+          top: props.label === '-' ? '40%' : '50%'
         }}>
         {props.label}
       </div>
     </div>
-  );
+  )
+}
+
+const noselect = {
+  webkitTouchCallout: 'none', /* iOS Safari */
+  webkitUserSelect: 'none', /* Safari */
+  khtmlUserSelect: 'none', /* Konqueror HTML */
+  mozUserSelect: 'none', /* Firefox */
+  msUserSelect: 'none', /* Internet Explorer/Edge */
+  userSelect: 'none' /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 const style = {
+  ...noselect,
   width: '50px',
   height: '50px',
   margin: '3px',
@@ -30,22 +40,22 @@ const style = {
   position: 'relative',
   display: 'inline-block',
   fontFamily: "'Arial Black', Arial-BoldMT, roboto, 'sans-serif'",
-  fontSize: '3rem',
-};
+  fontSize: '3rem'
+}
 
 const types = {
   base: {
     background: 'yellow',
-    foreground: 'black',
+    foreground: 'black'
   },
   skill: {
     background: 'green',
-    foreground: 'white',
+    foreground: 'white'
   },
   gear: {
     background: 'black',
-    foreground: 'white',
-  },
-};
+    foreground: 'white'
+  }
+}
 
-export default IncrementButton;
+export default IncrementButton

@@ -95,7 +95,8 @@ class App extends Component {
         }
       }
       this.setState({ dice: newDice, pushDisabled: 'disabled' })
-    };
+    }
+
     ReactGA.event({
       category: 'Dice',
       action: 'push'

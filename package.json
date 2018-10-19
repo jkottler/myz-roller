@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "materialize-css": "^1.0.0-beta",
+    "materialize-css": "^1.0.0",
     "random-js": "^1.0.8",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",

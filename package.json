@@ -9,7 +9,7 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-ga": "^2.5.3",
-    "react-scripts": "1.1.1"
+    "react-scripts": "2.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -19,5 +19,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://jkottler.github.io/myz-roller"
+  "homepage": "https://jkottler.github.io/myz-roller",
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

@@ -1,20 +1,29 @@
 {
-  "main.css": "/myz-roller/static/css/main.0a826ea8.chunk.css",
-  "main.js": "/myz-roller/static/js/main.5020559f.chunk.js",
-  "main.js.map": "/myz-roller/static/js/main.5020559f.chunk.js.map",
-  "static/css/1.afd7942b.chunk.css": "/myz-roller/static/css/1.afd7942b.chunk.css",
-  "static/js/1.9387ad50.chunk.js": "/myz-roller/static/js/1.9387ad50.chunk.js",
-  "static/js/1.9387ad50.chunk.js.map": "/myz-roller/static/js/1.9387ad50.chunk.js.map",
-  "runtime~main.js": "/myz-roller/static/js/runtime~main.5fc185b8.js",
-  "runtime~main.js.map": "/myz-roller/static/js/runtime~main.5fc185b8.js.map",
-  "static/media/radioactive-white.svg": "/myz-roller/static/media/radioactive-white.e2e3c844.svg",
-  "static/media/radioactive-black.svg": "/myz-roller/static/media/radioactive-black.9b0f30b3.svg",
-  "static/media/corner-explosion.svg": "/myz-roller/static/media/corner-explosion.bd3f6fbf.svg",
-  "static/media/biohazard.svg": "/myz-roller/static/media/biohazard.8f148111.svg",
-  "static/media/d6-6-glow.svg": "/myz-roller/static/media/d6-6-glow.7dd09130.svg",
-  "static/css/1.afd7942b.chunk.css.map": "/myz-roller/static/css/1.afd7942b.chunk.css.map",
-  "static/css/main.0a826ea8.chunk.css.map": "/myz-roller/static/css/main.0a826ea8.chunk.css.map",
-  "index.html": "/myz-roller/index.html",
-  "precache-manifest.e1c3026a6fa5183b9c5e7a5d4587e978.js": "/myz-roller/precache-manifest.e1c3026a6fa5183b9c5e7a5d4587e978.js",
-  "service-worker.js": "/myz-roller/service-worker.js"
+  "files": {
+    "main.css": "/myz-roller/static/css/main.cf94fbb5.chunk.css",
+    "main.js": "/myz-roller/static/js/main.607f9e70.chunk.js",
+    "main.js.map": "/myz-roller/static/js/main.607f9e70.chunk.js.map",
+    "runtime-main.js": "/myz-roller/static/js/runtime-main.81ebf0c2.js",
+    "runtime-main.js.map": "/myz-roller/static/js/runtime-main.81ebf0c2.js.map",
+    "static/css/2.cd064b02.chunk.css": "/myz-roller/static/css/2.cd064b02.chunk.css",
+    "static/js/2.1c777b41.chunk.js": "/myz-roller/static/js/2.1c777b41.chunk.js",
+    "static/js/2.1c777b41.chunk.js.map": "/myz-roller/static/js/2.1c777b41.chunk.js.map",
+    "index.html": "/myz-roller/index.html",
+    "precache-manifest.9fe0829f7de9eae06c37fc66babceb54.js": "/myz-roller/precache-manifest.9fe0829f7de9eae06c37fc66babceb54.js",
+    "service-worker.js": "/myz-roller/service-worker.js",
+    "static/css/2.cd064b02.chunk.css.map": "/myz-roller/static/css/2.cd064b02.chunk.css.map",
+    "static/css/main.cf94fbb5.chunk.css.map": "/myz-roller/static/css/main.cf94fbb5.chunk.css.map",
+    "static/media/biohazard.svg": "/myz-roller/static/media/biohazard.8f148111.svg",
+    "static/media/corner-explosion.svg": "/myz-roller/static/media/corner-explosion.bd3f6fbf.svg",
+    "static/media/d6-6-glow.svg": "/myz-roller/static/media/d6-6-glow.7dd09130.svg",
+    "static/media/radioactive-black.svg": "/myz-roller/static/media/radioactive-black.9b0f30b3.svg",
+    "static/media/radioactive-white.svg": "/myz-roller/static/media/radioactive-white.e2e3c844.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.81ebf0c2.js",
+    "static/css/2.cd064b02.chunk.css",
+    "static/js/2.1c777b41.chunk.js",
+    "static/css/main.cf94fbb5.chunk.css",
+    "static/js/main.607f9e70.chunk.js"
+  ]
 }

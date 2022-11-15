@@ -22,6 +22,7 @@ class SelectorForm extends Component {
       this.setState({
         [type + 'Count']: parseInt(count, 10),
       });
+      props.handleDiceChange()
     };
 
     this.handleRoll = (e) => {

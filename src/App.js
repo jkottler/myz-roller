@@ -94,7 +94,11 @@ class App extends Component {
           )
         }
       }
-      this.setState({ dice: newDice, pushDisabled: 'disabled' })
+      this.setState({ dice: newDice })
+    }
+
+    this.handleDiceChange = (e) => {
+      this.setState({ dice: [], pushDisabled: 'disabled'})
     }
 
     ReactGA.event({
@@ -125,6 +129,7 @@ class App extends Component {
                   handlePush={this.handlePush}
                   pushDisabled={this.state.pushDisabled}
                   rollDisabled={this.state.rollDisabled}
+                  handleDiceChange={this.handleDiceChange}
                 />
               </div>
               <div className='col s8'>

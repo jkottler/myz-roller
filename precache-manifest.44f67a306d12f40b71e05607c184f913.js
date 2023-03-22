@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d8b5e83bb65d429733c318dbed945e24",
+    "revision": "e917e90901f8a950e21a34a83c029f79",
     "url": "/myz-roller/index.html"
   },
   {
-    "revision": "e730263e67df6920c4ed",
-    "url": "/myz-roller/static/css/2.cd064b02.chunk.css"
+    "revision": "cb19ab8fbff4d1659aab",
+    "url": "/myz-roller/static/css/2.c17c13e9.chunk.css"
   },
   {
-    "revision": "e41c3d7c1967d417fe85",
+    "revision": "7d5fa3875b1dfeafec20",
     "url": "/myz-roller/static/css/main.cf94fbb5.chunk.css"
   },
   {
-    "revision": "e730263e67df6920c4ed",
-    "url": "/myz-roller/static/js/2.32f8abb0.chunk.js"
+    "revision": "cb19ab8fbff4d1659aab",
+    "url": "/myz-roller/static/js/2.9bd99917.chunk.js"
   },
   {
-    "revision": "e41c3d7c1967d417fe85",
-    "url": "/myz-roller/static/js/main.cc93eb21.chunk.js"
+    "revision": "7d5fa3875b1dfeafec20",
+    "url": "/myz-roller/static/js/main.91f52f6f.chunk.js"
   },
   {
-    "revision": "0e6a4f12b58a1369b440",
-    "url": "/myz-roller/static/js/runtime-main.81ebf0c2.js"
+    "revision": "8c29c172abdfdcbbfe3b",
+    "url": "/myz-roller/static/js/runtime-main.bb8d3062.js"
   },
   {
     "revision": "8f1481114fd3ccafb57f5b93ad247f32",

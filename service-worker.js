@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/myz-roller/precache-manifest.44f67a306d12f40b71e05607c184f913.js"
+  "/myz-roller/precache-manifest.ad91bf5477b7bc2d22dc1a11e7922766.js"
 );
 
 self.addEventListener('message', (event) => {

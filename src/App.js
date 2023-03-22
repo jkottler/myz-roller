@@ -146,7 +146,7 @@ class App extends Component {
                 <div className='col s4'>
                   A dice roller for:{' '}
                   <a
-                    href='https://www.modiphius.com/mutant.html'
+                    href='https://freeleaguepublishing.com/en/games/mutant-year-zero/'
                     rel='noopener noreferrer'
                     target='_blank'>
                     Mutant: Year Zero
